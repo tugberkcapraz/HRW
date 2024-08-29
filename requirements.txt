@@ -1,0 +1,10 @@
+newspaper3k
+requests
+openai
+pandas 
+numpy 
+matplotlib 
+seaborn
+scipy
+scikit-learn
+python-dotenv
