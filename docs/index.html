@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <title>Human Rights Violations Analysis 2024</title>
 </head>
 <body>
     <header>
-        <h1>Human Rights Violations in 2024</h1>
+        <h1>Human Rights Violations Analysis 2024</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="accusations.html">Accusations</a>
@@ -17,10 +17,59 @@
         </nav>
     </header>
     <main>
-        <p>This project provides an in-depth analysis of various global issues, including accusations, risks, and affected victims.</p>
+        <section class="index-section">
+            <h2>Project Overview</h2>
+            <p>This project provides an in-depth analysis of human rights violations in 2024, based on data from Human Rights Watch. I've processed 401 articles to extract key information on accusations, risks, and affected victims, using advanced natural language processing techniques to convert qualitative data into quantitative insights.</p>
+        </section>
+        
+        <section class="index-section">
+            <h2>Methodology</h2>
+            <h3>1. Data Collection</h3>
+            <p>I scraped 401 articles from Human Rights Watch using the GDELT API, focusing on publications from January 1, 2024, to August 28, 2024. My custom Python script utilized the `newspaper3k` library to extract article content and metadata.</p>
+            
+            <h3>2. Data Processing</h3>
+            <p>I employed Large Language Models (LLMs), specifically OpenAI's GPT model, as a gateway to convert qualitative textual data into quantitative data. This innovative approach allowed me to systematically categorize and quantify complex human rights information.</p>
+            
+            <h4>LLM-Powered Qualitative to Quantitative Conversion:</h4>
+            <ul>
+                <li><strong>Accusation Categories:</strong> I used the LLM to identify and categorize specific types of human rights violations mentioned in each article. The model was prompted to extract and classify accusations, enabling me to quantify the frequency and distribution of different violation types.</li>
+                <li><strong>Risk Analysis:</strong> The LLM analyzed articles to identify potential long-term consequences of human rights violations. By structuring the model's output, I converted qualitative assessments of risks into quantifiable data points.</li>
+                <li><strong>Victim Demographics:</strong> I leveraged the LLM to extract and categorize information about affected groups. This allowed me to transform descriptive text into structured data on victim demographics.</li>
+            </ul>
+            
+            <p>For each category, I used carefully crafted prompts to guide the LLM in extracting relevant information and formatting it in a consistent, quantifiable manner. This process involved:</p>
+            <ol>
+                <li>Feeding article text to the LLM with specific instructions.</li>
+                <li>Parsing the LLM's structured output into a format suitable for data analysis.</li>
+                <li>Aggregating results across all articles to generate quantitative datasets.</li>
+            </ol>
+            
+            <h3>3. Data Analysis and Visualization</h3>
+            <p>I used Python libraries such as pandas, matplotlib, and seaborn to process the quantified data and create visual representations. My analysis focused on identifying patterns, trends, and correlations within and across the three main categories: accusations, risks, and victims.</p>
+        </section>
+        
+        <section class="index-section">
+            <h2>Key Findings</h2>
+            <p>My analysis is divided into three main categories, each represented by a series of data visualizations:</p>
+            <ul>
+                <li><strong>Accusations:</strong> Bar charts and heatmaps showing the frequency and co-occurrence of different types of human rights violations, including political repression, arbitrary detention, and discrimination against minorities.</li>
+                <li><strong>Risks:</strong> Network graphs and impact matrices illustrating the potential long-term consequences of violations, such as cultural erasure, economic instability, and erosion of civil liberties.</li>
+                <li><strong>Victims:</strong> Demographic breakdowns and geographical distributions of affected groups, including children, ethnic minorities, and journalists, presented through pie charts and choropleth maps.</li>
+            </ul>
+            <p>Explore each category in detail using the navigation menu above to view the full set of visualizations and their interpretations.</p>
+        </section>
+        
+        <section class="index-section">
+            <h2>Limitations and Future Work</h2>
+            <p>While my LLM-based approach allows for efficient processing of large volumes of qualitative data, it's important to note potential limitations such as model biases and the need for human verification. Future work could involve refining my prompts, incorporating multiple LLMs for cross-validation, and integrating expert human review to further enhance the accuracy and reliability of my findings.</p>
+        </section>
     </main>
     <footer>
-        <p>&copy; Data Source: Human Rights Watch. By Kerem Tugberk Capraz.</p>
+        <div class="logos">
+            <img src="gdelt_logo.png" alt="GDELT Logo" class="logo">
+            <img src="hrw_logo.jpeg" alt="Human Rights Watch Logo" class="logo">
+        </div>
+        <p>&copy; 2024 Human Rights Violations Analysis Project. Data Source: Human Rights Watch. By Kerem Tugberk Capraz.</p>
     </footer>
 </body>
 </html>

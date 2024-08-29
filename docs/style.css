@@ -92,15 +92,63 @@ footer {
     color: var(--secondary-color);
     text-align: center;
     padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    margin-top: 2rem; /* Space above the footer */
+    clear: both; /* Ensure it clears any floated elements */
+}
+
+.logos {
+    display: flex;
+    justify-content: center; /* Center the logos */
+    gap: 1rem; /* Space between logos */
+    margin-bottom: 1rem; /* Space below the logos */
+}
+
+.logo {
+    max-width: 100px; /* Set a maximum width for the logos */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
+}
+
+/* New styles for index.html */
+.index-section {
+    margin-bottom: 2rem; /* Space between sections */
+    padding: 1rem;
+    background-color: white; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.index-section h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.index-section h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+}
+
+.index-section h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.index-section ul, .index-section ol {
+    margin-left: 1.5rem; /* Indent lists */
+    margin-bottom: 1rem; /* Space below lists */
 }
 
 /* Add these styles at the end of your existing CSS file */
