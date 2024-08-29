@@ -177,3 +177,8 @@ footer {
     background-color: black;
     border: 2px solid white;
 }
+
+.center-text {
+    text-align: center; /* Center the text */
+    margin: 1rem 0; /* Optional: Add some vertical spacing */
+}
